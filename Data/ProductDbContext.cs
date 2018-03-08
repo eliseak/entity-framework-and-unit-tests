@@ -11,6 +11,7 @@ namespace Data
     public class ProductDbContext : DbContext
     {
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Loja> Lojas { get; set; }
 
         public ProductDbContext() : base("Name=ProductDb") // Passa por parâmetro o nome da connectionString
         {
