@@ -10,6 +10,7 @@ namespace Data
 {
     public class ProductDbContext : DbContext
     {
+        // Mapeamento
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Loja> Lojas { get; set; }
 
