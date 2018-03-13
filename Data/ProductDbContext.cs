@@ -18,6 +18,7 @@ namespace Data
         {
             // Inicializa tabela no banco 
             Database.SetInitializer<ProductDbContext>(new CreateDatabaseIfNotExists<ProductDbContext>());
+            Database.Initialize(false);
         }
         
     }
