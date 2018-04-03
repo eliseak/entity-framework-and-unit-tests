@@ -21,9 +21,9 @@ namespace Calculadora
         }
 
         // Subtrai dois números
-        public int Subtrair (int aditivo, int subtrativo)
+        public int Subtrair (int minuendo, int subtraendo)
         {
-            return aditivo - subtrativo;
+            return minuendo - subtraendo;
         }
 
         // Divide dois números
