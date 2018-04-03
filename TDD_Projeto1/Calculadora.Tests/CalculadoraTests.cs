@@ -28,6 +28,27 @@ namespace Calculadora.Tests
 
                 Assert.That(resultado, Is.EqualTo(25));
             }
+
+            [Test]
+            public void DeveSubtrairDoisNumeros()
+            {
+                var sut = new CalculadoraSimples();
+
+                var resultado = sut.Subtrair(5, 5);
+
+                Assert.That(resultado, Is.EqualTo(0));
+            }
+
+            [Test]
+            public void DeveDividirDoisNumeros()
+            {
+                var sut = new CalculadoraSimples();
+
+                var resultado = sut.Dividir(5, 5);
+
+                Assert.That(resultado, Is.EqualTo(1));
+            }
+
         }
     }
 }
